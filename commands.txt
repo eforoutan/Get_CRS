@@ -1,0 +1,10 @@
+python .\get_crs.py "C:\CWL\spatial\Get_CRS\Hospitals\hosp_within_area_proj.shp"
+python .\get_crs.py "C:\CWL\spatial\Get_CRS\Hospitals\hosp_within_area.shp"
+
+
+docker build -t eforoutan/get_crs:latest .
+
+
+docker push eforoutan/get_crs
+
+cwltool get_crs.CWL get_crs.yml
