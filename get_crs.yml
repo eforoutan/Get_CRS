@@ -1,3 +1,5 @@
 input_shapefile:
-  class: Directory
-  path: Hospitals_wgs
+  # class: Directory
+  # path: Hospitals_wgs
+  class: File
+  path: OK_Counties.geojson
